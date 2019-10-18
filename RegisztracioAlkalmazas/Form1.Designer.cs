@@ -1,6 +1,6 @@
 ﻿namespace RegisztracioAlkalmazas
 {
-    partial class Form1
+    partial class Regisztracio
     {
         /// <summary>
         /// Required designer variable.
@@ -28,160 +28,178 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.NevLabel = new System.Windows.Forms.Label();
+            this.DatumLabel = new System.Windows.Forms.Label();
+            this.NemLabel = new System.Windows.Forms.Label();
+            this.HobbiLabel = new System.Windows.Forms.Label();
+            this.HobbiListBox = new System.Windows.Forms.ListBox();
+            this.HobbiAddLabel = new System.Windows.Forms.Label();
+            this.NevBox = new System.Windows.Forms.TextBox();
+            this.HozzaadButton = new System.Windows.Forms.Button();
+            this.MentesButton = new System.Windows.Forms.Button();
+            this.BetoltesButton = new System.Windows.Forms.Button();
+            this.FerfiRadioButton = new System.Windows.Forms.RadioButton();
+            this.NoRadioButton = new System.Windows.Forms.RadioButton();
+            this.MuskatliRadioButton = new System.Windows.Forms.RadioButton();
+            this.DatumBox = new System.Windows.Forms.TextBox();
+            this.HobbiBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // label1
+            // NevLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(82, 55);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Név:";
+            this.NevLabel.AutoSize = true;
+            this.NevLabel.Location = new System.Drawing.Point(24, 27);
+            this.NevLabel.Name = "NevLabel";
+            this.NevLabel.Size = new System.Drawing.Size(30, 13);
+            this.NevLabel.TabIndex = 0;
+            this.NevLabel.Text = "Név:";
             // 
-            // label2
+            // DatumLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(85, 93);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Szul.Datum:";
+            this.DatumLabel.AutoSize = true;
+            this.DatumLabel.Location = new System.Drawing.Point(24, 58);
+            this.DatumLabel.Name = "DatumLabel";
+            this.DatumLabel.Size = new System.Drawing.Size(64, 13);
+            this.DatumLabel.TabIndex = 1;
+            this.DatumLabel.Text = "Szul.Datum:";
             // 
-            // label3
+            // NemLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(82, 117);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Nem:";
+            this.NemLabel.AutoSize = true;
+            this.NemLabel.Location = new System.Drawing.Point(24, 88);
+            this.NemLabel.Name = "NemLabel";
+            this.NemLabel.Size = new System.Drawing.Size(32, 13);
+            this.NemLabel.TabIndex = 2;
+            this.NemLabel.Text = "Nem:";
             // 
-            // label4
+            // HobbiLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(319, 55);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Kedvenc hobbi: ";
+            this.HobbiLabel.AutoSize = true;
+            this.HobbiLabel.Location = new System.Drawing.Point(24, 122);
+            this.HobbiLabel.Name = "HobbiLabel";
+            this.HobbiLabel.Size = new System.Drawing.Size(91, 13);
+            this.HobbiLabel.TabIndex = 3;
+            this.HobbiLabel.Text = "Kedvenc hobbik: ";
             // 
-            // listBox1
+            // HobbiListBox
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(322, 81);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 95);
-            this.listBox1.TabIndex = 4;
+            this.HobbiListBox.FormattingEnabled = true;
+            this.HobbiListBox.Location = new System.Drawing.Point(110, 122);
+            this.HobbiListBox.Name = "HobbiListBox";
+            this.HobbiListBox.Size = new System.Drawing.Size(156, 147);
+            this.HobbiListBox.TabIndex = 4;
             // 
-            // label5
+            // HobbiAddLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(322, 208);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 13);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Új hobbi";
+            this.HobbiAddLabel.AutoSize = true;
+            this.HobbiAddLabel.Location = new System.Drawing.Point(24, 289);
+            this.HobbiAddLabel.Name = "HobbiAddLabel";
+            this.HobbiAddLabel.Size = new System.Drawing.Size(49, 13);
+            this.HobbiAddLabel.TabIndex = 5;
+            this.HobbiAddLabel.Text = "Új hobbi:";
             // 
-            // textBox1
+            // NevBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(374, 205);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 6;
+            this.NevBox.Location = new System.Drawing.Point(110, 27);
+            this.NevBox.Name = "NevBox";
+            this.NevBox.Size = new System.Drawing.Size(156, 20);
+            this.NevBox.TabIndex = 6;
             // 
-            // button1
+            // HozzaadButton
             // 
-            this.button1.Location = new System.Drawing.Point(322, 241);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Hozzáad";
-            this.button1.UseVisualStyleBackColor = true;
+            this.HozzaadButton.Location = new System.Drawing.Point(138, 312);
+            this.HozzaadButton.Name = "HozzaadButton";
+            this.HozzaadButton.Size = new System.Drawing.Size(75, 23);
+            this.HozzaadButton.TabIndex = 7;
+            this.HozzaadButton.Text = "Hozzáad";
+            this.HozzaadButton.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // MentesButton
             // 
-            this.button2.Location = new System.Drawing.Point(342, 291);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Mentés";
-            this.button2.UseVisualStyleBackColor = true;
+            this.MentesButton.Location = new System.Drawing.Point(219, 361);
+            this.MentesButton.Name = "MentesButton";
+            this.MentesButton.Size = new System.Drawing.Size(75, 23);
+            this.MentesButton.TabIndex = 8;
+            this.MentesButton.Text = "Mentés";
+            this.MentesButton.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // BetoltesButton
             // 
-            this.button3.Location = new System.Drawing.Point(438, 291);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Betöltés";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BetoltesButton.Location = new System.Drawing.Point(63, 361);
+            this.BetoltesButton.Name = "BetoltesButton";
+            this.BetoltesButton.Size = new System.Drawing.Size(75, 23);
+            this.BetoltesButton.TabIndex = 9;
+            this.BetoltesButton.Text = "Betöltés";
+            this.BetoltesButton.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // FerfiRadioButton
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(120, 117);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(45, 17);
-            this.radioButton1.TabIndex = 10;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Férfi";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.FerfiRadioButton.AutoSize = true;
+            this.FerfiRadioButton.Location = new System.Drawing.Point(106, 88);
+            this.FerfiRadioButton.Name = "FerfiRadioButton";
+            this.FerfiRadioButton.Size = new System.Drawing.Size(45, 17);
+            this.FerfiRadioButton.TabIndex = 10;
+            this.FerfiRadioButton.TabStop = true;
+            this.FerfiRadioButton.Text = "Férfi";
+            this.FerfiRadioButton.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // NoRadioButton
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(171, 117);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(39, 17);
-            this.radioButton2.TabIndex = 11;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Nő";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.NoRadioButton.AutoSize = true;
+            this.NoRadioButton.Location = new System.Drawing.Point(157, 88);
+            this.NoRadioButton.Name = "NoRadioButton";
+            this.NoRadioButton.Size = new System.Drawing.Size(39, 17);
+            this.NoRadioButton.TabIndex = 11;
+            this.NoRadioButton.TabStop = true;
+            this.NoRadioButton.Text = "Nő";
+            this.NoRadioButton.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // MuskatliRadioButton
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(216, 117);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(64, 17);
-            this.radioButton3.TabIndex = 12;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Muskátli";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.MuskatliRadioButton.AutoSize = true;
+            this.MuskatliRadioButton.Location = new System.Drawing.Point(202, 88);
+            this.MuskatliRadioButton.Name = "MuskatliRadioButton";
+            this.MuskatliRadioButton.Size = new System.Drawing.Size(64, 17);
+            this.MuskatliRadioButton.TabIndex = 12;
+            this.MuskatliRadioButton.TabStop = true;
+            this.MuskatliRadioButton.Text = "Muskátli";
+            this.MuskatliRadioButton.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // DatumBox
+            // 
+            this.DatumBox.Location = new System.Drawing.Point(110, 58);
+            this.DatumBox.Name = "DatumBox";
+            this.DatumBox.Size = new System.Drawing.Size(114, 20);
+            this.DatumBox.TabIndex = 13;
+            // 
+            // HobbiBox
+            // 
+            this.HobbiBox.Location = new System.Drawing.Point(79, 286);
+            this.HobbiBox.Name = "HobbiBox";
+            this.HobbiBox.Size = new System.Drawing.Size(187, 20);
+            this.HobbiBox.TabIndex = 14;
+            // 
+            // Regisztracio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.ClientSize = new System.Drawing.Size(319, 413);
+            this.Controls.Add(this.HobbiBox);
+            this.Controls.Add(this.DatumBox);
+            this.Controls.Add(this.MuskatliRadioButton);
+            this.Controls.Add(this.NoRadioButton);
+            this.Controls.Add(this.FerfiRadioButton);
+            this.Controls.Add(this.BetoltesButton);
+            this.Controls.Add(this.MentesButton);
+            this.Controls.Add(this.HozzaadButton);
+            this.Controls.Add(this.NevBox);
+            this.Controls.Add(this.HobbiAddLabel);
+            this.Controls.Add(this.HobbiListBox);
+            this.Controls.Add(this.HobbiLabel);
+            this.Controls.Add(this.NemLabel);
+            this.Controls.Add(this.DatumLabel);
+            this.Controls.Add(this.NevLabel);
+            this.Name = "Regisztracio";
             this.Text = "Regisztráció";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -190,19 +208,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.Label NevLabel;
+        private System.Windows.Forms.Label DatumLabel;
+        private System.Windows.Forms.Label NemLabel;
+        private System.Windows.Forms.Label HobbiLabel;
+        private System.Windows.Forms.ListBox HobbiListBox;
+        private System.Windows.Forms.Label HobbiAddLabel;
+        private System.Windows.Forms.TextBox NevBox;
+        private System.Windows.Forms.Button HozzaadButton;
+        private System.Windows.Forms.Button MentesButton;
+        private System.Windows.Forms.Button BetoltesButton;
+        private System.Windows.Forms.RadioButton FerfiRadioButton;
+        private System.Windows.Forms.RadioButton NoRadioButton;
+        private System.Windows.Forms.RadioButton MuskatliRadioButton;
+        private System.Windows.Forms.TextBox DatumBox;
+        private System.Windows.Forms.TextBox HobbiBox;
     }
 }
 
