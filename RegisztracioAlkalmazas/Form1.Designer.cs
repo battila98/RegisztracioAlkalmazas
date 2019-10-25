@@ -43,6 +43,8 @@
             this.MuskatliRadioButton = new System.Windows.Forms.RadioButton();
             this.DatumBox = new System.Windows.Forms.TextBox();
             this.HobbiBox = new System.Windows.Forms.TextBox();
+            this.saveFileDialogMentes = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialogNyitas = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // NevLabel
@@ -84,10 +86,17 @@
             // HobbiListBox
             // 
             this.HobbiListBox.FormattingEnabled = true;
+            this.HobbiListBox.Items.AddRange(new object[] {
+            "Gaming",
+            "GTA",
+            "Kex",
+            "Discozás",
+            "Ivás"});
             this.HobbiListBox.Location = new System.Drawing.Point(110, 122);
             this.HobbiListBox.Name = "HobbiListBox";
             this.HobbiListBox.Size = new System.Drawing.Size(156, 147);
             this.HobbiListBox.TabIndex = 4;
+            this.HobbiListBox.SelectedIndexChanged += new System.EventHandler(this.HobbiListBox_SelectedIndexChanged);
             // 
             // HobbiAddLabel
             // 
@@ -113,6 +122,7 @@
             this.HozzaadButton.TabIndex = 7;
             this.HozzaadButton.Text = "Hozzáad";
             this.HozzaadButton.UseVisualStyleBackColor = true;
+            this.HozzaadButton.Click += new System.EventHandler(this.HozzaadButton_Click);
             // 
             // MentesButton
             // 
@@ -179,6 +189,15 @@
             this.HobbiBox.Size = new System.Drawing.Size(187, 20);
             this.HobbiBox.TabIndex = 14;
             // 
+            // saveFileDialogMentes
+            // 
+            this.saveFileDialogMentes.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialogMentes_FileOk);
+            // 
+            // openFileDialogNyitas
+            // 
+            this.openFileDialogNyitas.FileName = "openFileDialogNyitas";
+            this.openFileDialogNyitas.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialogNyitas_FileOk);
+            // 
             // Regisztracio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -223,6 +242,8 @@
         private System.Windows.Forms.RadioButton MuskatliRadioButton;
         private System.Windows.Forms.TextBox DatumBox;
         private System.Windows.Forms.TextBox HobbiBox;
+        private System.Windows.Forms.SaveFileDialog saveFileDialogMentes;
+        private System.Windows.Forms.OpenFileDialog openFileDialogNyitas;
     }
 }
 
