@@ -96,7 +96,6 @@
             this.HobbiListBox.Name = "HobbiListBox";
             this.HobbiListBox.Size = new System.Drawing.Size(156, 147);
             this.HobbiListBox.TabIndex = 4;
-            this.HobbiListBox.SelectedIndexChanged += new System.EventHandler(this.HobbiListBox_SelectedIndexChanged);
             // 
             // HobbiAddLabel
             // 
