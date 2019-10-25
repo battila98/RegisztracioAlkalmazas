@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RegisztracioAlkalmazas
@@ -104,22 +98,39 @@ namespace RegisztracioAlkalmazas
 
         private void HobbiListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+           
         }
 
         private void HozzaadButton_Click(object sender, EventArgs e)
         {
-            HobbiListBox.Items.Add(HobbiBox);
-        }
-
-        private void openFileDialogNyitas_FileOk(object sender, CancelEventArgs e)
-        {
+            HobbiListBox.Items.Add(HobbiBox.Text);
 
         }
 
-        private void saveFileDialogMentes_FileOk(object sender, CancelEventArgs e)
+        private void HobbiBox_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.Enter)
+            {
+                HobbiListBox.Items.Add(HobbiBox.Text+"");              
+            }
+        }
 
+        private void MentesButton_Click(object sender, EventArgs e)
+        {
+            if (NevBox.Text != "" && DatumBox.Text != "" && HobbiListBox.SelectedIndex != -1 &&
+                (FerfiRadioButton.Checked || NoRadioButton.Checked || MuskatliRadioButton.Checked))
+            {
+                saveFileDialogMentes.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Nem töltöttél ki minden mezőt!");
+            }
+        }
+
+        private void BetoltesButton_Click(object sender, EventArgs e)
+        {
+            openFileDialogNyitas.ShowDialog();
         }
     }
 

@@ -132,6 +132,7 @@
             this.MentesButton.TabIndex = 8;
             this.MentesButton.Text = "Mentés";
             this.MentesButton.UseVisualStyleBackColor = true;
+            this.MentesButton.Click += new System.EventHandler(this.MentesButton_Click);
             // 
             // BetoltesButton
             // 
@@ -141,6 +142,7 @@
             this.BetoltesButton.TabIndex = 9;
             this.BetoltesButton.Text = "Betöltés";
             this.BetoltesButton.UseVisualStyleBackColor = true;
+            this.BetoltesButton.Click += new System.EventHandler(this.BetoltesButton_Click);
             // 
             // FerfiRadioButton
             // 
@@ -188,15 +190,11 @@
             this.HobbiBox.Name = "HobbiBox";
             this.HobbiBox.Size = new System.Drawing.Size(187, 20);
             this.HobbiBox.TabIndex = 14;
-            // 
-            // saveFileDialogMentes
-            // 
-            this.saveFileDialogMentes.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialogMentes_FileOk);
+            this.HobbiBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.HobbiBox_KeyDown);
             // 
             // openFileDialogNyitas
             // 
             this.openFileDialogNyitas.FileName = "openFileDialogNyitas";
-            this.openFileDialogNyitas.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialogNyitas_FileOk);
             // 
             // Regisztracio
             // 
